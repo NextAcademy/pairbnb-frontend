@@ -107,10 +107,22 @@ Thereofre, you may use the 1st way to resize everything*/
   .menu {
     width:100%;
     background:#ff5a5f;
+    @media screen and (max-width: 400px) {
+    #AboutUs {
+      display: hide;
+      }
+    }
   }
 
 .menu ul {
   display:inline-block;
+  @media screen and (max-width: 400px) {
+    #Login {display: none;}
+    #Signup {display: none;}
+    #AboutUs {display: none;}
+    /*You can manually choose which ID you want to hide {display: none;} when on smaller screen.
+    Ensure you name each Nav link with an ID first.*/
+  }
 }
  
 .menu li {
