@@ -51,31 +51,31 @@ body {
     margin-bottom: 20px;
 
   }
-  @media screen and (max-width: 480px) {
+/*  @media screen and (max-width: 480px) {
     .main-text {
     letter-spacing: 6px;
     font-size: 30px;
     margin-bottom: 10px;
     }
-  }
+  }*/
 
   .sub-text {
     font-size: 30px;
     letter-spacing: 4px;
     font-weight: lighter;
   }
-  @media screen and (max-width: 480px) {
+/*  @media screen and (max-width: 480px) {
     .sub-text  {
     letter-spacing: 6px;
     font-size: 10px;
     margin-bottom: 10px;
     }
-  }
+  }*/
 }
 
-/*2nd way of using @media rule for the same outcome as 1s way. 
+/*2nd way of using @media rule for the same outcome as 1st way. 
 Also manually changed the height of .hero-header for testing
-Thereofre, you may use the 1st way to resize everything*/
+Therefore, you may use the 1st way to resize everything*/
 
 
 .container {
@@ -198,3 +198,19 @@ Thereofre, you may use the 1st way to resize everything*/
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+  .hero-header  .main-text {
+    letter-spacing: 6px;
+    font-size: 30px;
+    margin-bottom: 10px;
+    } 
+
+  .hero-header .sub-text  {
+  letter-spacing: 6px;
+  font-size: 10px;
+  margin-bottom: 10px;
+  }
+
+}
+/*1st way of using @media rule for the same outcome as 2nd way.*/
