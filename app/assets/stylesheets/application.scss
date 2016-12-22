@@ -92,13 +92,16 @@ Thereofre, you may use the 1st way to resize everything*/
 
 .para-one {
   width: 50%;
+  @media screen and (max-width: 400px) {width: 100%;}
   float: left;
 }
 
 .para-two {
   width: 50%;
+  @media screen and (max-width: 400px) {width: 100%;}
   float: left;
 }
+/*adjust width for para-one & para-two to full width when on small screen*/
  
 /*----- Menu -----*/
   .menu {
