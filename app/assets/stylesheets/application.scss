@@ -37,18 +37,46 @@ body {
   padding-top: 10%;
   text-transform: uppercase;
   color: #fff;
+  @media screen and (max-width: 480px) {
+      text-align: center;
+      height: 300px;
+      padding-top: 10%;
+      text-transform: uppercase;
+      color: #fff;
+  }
+
   .main-text {
     letter-spacing: 6px;
-    font-size: 30px;
+    font-size: 70px;
     margin-bottom: 20px;
 
   }
+  @media screen and (max-width: 480px) {
+    .main-text {
+    letter-spacing: 6px;
+    font-size: 30px;
+    margin-bottom: 10px;
+    }
+  }
+
   .sub-text {
-    font-size: 20px;
+    font-size: 30px;
     letter-spacing: 4px;
     font-weight: lighter;
   }
+  @media screen and (max-width: 480px) {
+    .sub-text  {
+    letter-spacing: 6px;
+    font-size: 10px;
+    margin-bottom: 10px;
+    }
+  }
 }
+
+/*2nd way of using @media rule for the same outcome as 1s way. 
+Also manually changed the height of .hero-header for testing
+Thereofre, you may use the 1st way to resize everything*/
+
 
 .container {
   margin: 20px;
@@ -155,23 +183,3 @@ body {
     }
   }
 }
-
-
-@media screen and (min-width: 480px) {
-  body {
-    .hero-header .main-text {
-    letter-spacing: 6px;
-    font-size: 70px;
-    margin-bottom: 10px;
-    }
-
-    .hero-header .sub-text{
-    font-size: 30px;
-    letter-spacing: 4px;
-    font-weight: lighter;
-     }
-  }
-}
-/*min-wdith: change font size if the viewport is >= 480 px */
-/*1st way of ding*/
-
