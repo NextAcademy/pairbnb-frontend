@@ -2,15 +2,18 @@
 <html>
 <head>
   <title>Carebnb</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <!-- meta viewport auto works in firefox without the need to include it -->
 </head>
 <body>
 
 <%= render partial: "layouts/navbar" %>
 <div class="container">
+
   <%= yield %>
 </div>
 <div class="pusher"></div>

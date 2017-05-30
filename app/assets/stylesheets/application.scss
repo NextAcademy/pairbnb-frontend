@@ -37,17 +37,46 @@ body {
   padding-top: 10%;
   text-transform: uppercase;
   color: #fff;
+  @media screen and (max-width: 480px) {
+      text-align: center;
+      height: 300px;
+      padding-top: 10%;
+      text-transform: uppercase;
+      color: #fff;
+  }
+
   .main-text {
     letter-spacing: 6px;
     font-size: 70px;
     margin-bottom: 20px;
+
   }
+/*  @media screen and (max-width: 480px) {
+    .main-text {
+    letter-spacing: 6px;
+    font-size: 30px;
+    margin-bottom: 10px;
+    }
+  }*/
+
   .sub-text {
     font-size: 30px;
     letter-spacing: 4px;
     font-weight: lighter;
   }
+/*  @media screen and (max-width: 480px) {
+    .sub-text  {
+    letter-spacing: 6px;
+    font-size: 10px;
+    margin-bottom: 10px;
+    }
+  }*/
 }
+
+/*2nd way of using @media rule for the same outcome as 1st way. 
+Also manually changed the height of .hero-header for testing
+Therefore, you may use the 1st way to resize everything*/
+
 
 .container {
   margin: 20px;
@@ -63,22 +92,37 @@ body {
 
 .para-one {
   width: 50%;
+  @media screen and (max-width: 400px) {width: 100%;}
   float: left;
 }
 
 .para-two {
   width: 50%;
+  @media screen and (max-width: 400px) {width: 100%;}
   float: left;
 }
+/*adjust width for para-one & para-two to full width when on small screen*/
  
 /*----- Menu -----*/
   .menu {
     width:100%;
     background:#ff5a5f;
+    @media screen and (max-width: 400px) {
+    #AboutUs {
+      display: hide;
+      }
+    }
   }
 
 .menu ul {
   display:inline-block;
+  @media screen and (max-width: 400px) {
+    #Login {display: none;}
+    #Signup {display: none;}
+    #AboutUs {display: none;}
+    /*You can manually choose which ID you want to hide {display: none;} when on smaller screen.
+    Ensure you name each Nav link with an ID first.*/
+  }
 }
  
 .menu li {
@@ -154,3 +198,19 @@ body {
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+  .hero-header  .main-text {
+    letter-spacing: 6px;
+    font-size: 30px;
+    margin-bottom: 10px;
+    } 
+
+  .hero-header .sub-text  {
+  letter-spacing: 6px;
+  font-size: 10px;
+  margin-bottom: 10px;
+  }
+
+}
+/*1st way of using @media rule for the same outcome as 2nd way.*/
